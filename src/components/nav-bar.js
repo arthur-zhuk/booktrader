@@ -4,8 +4,10 @@ class NavBar extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-light bg-primary">Book Trader {this.props.name}</nav>
-
+        <nav className="navbar navbar-light bg-primary">
+          <a className="navbar-brand" href="/">Book Trader</a>
+          {this.props.name}
+        </nav>
       </div>
     )
   }
